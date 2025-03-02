@@ -19,6 +19,11 @@ class Wax(BaseModel):
     snow_type: str
     notes: str
 
+# GET the root endpoint
+@app.get("/")
+def read_root():
+    return {"message": "Welcome to the Ski Wax API!"}
+
 # GET all waxes
 @app.get("/waxes")
 def get_waxes():
