@@ -1,3 +1,2 @@
 fastapi
 uvicorn
-sqlite3  # (optional, it's included with Python)
